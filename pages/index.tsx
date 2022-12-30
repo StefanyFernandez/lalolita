@@ -9,7 +9,7 @@ import ShapeYellow from "../src/components/shapes/ShapeYellow";
 const index: React.FC = () => (
   <Layout mainClass="home" title="Home">
     <article className="left">
-      <Image source="lola" title="Lola" width="1542" height="1744" />
+      <Image source="lola" title="Lola" width={771} height={872} />
       <ShapeYellow />
       <DotsLarge />
       <Circle />

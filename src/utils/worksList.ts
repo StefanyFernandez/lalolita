@@ -1,12 +1,12 @@
 export enum TabsNames {
-  All = 'All',
-  Web = 'UI - UX',
-  Branding = 'Branding',
-  Lettering = 'Lettering',
-  Other = 'Other Things',
+  All = "All",
+  Web = "UI - UX",
+  Branding = "Branding",
+  Lettering = "Lettering",
+  Other = "Other Things",
 }
 
-export type WorkSizes = 'tall' | 'wide' | 'big';
+export type WorkSizes = "tall" | "wide" | "big";
 
 interface Tabs {
   category: TabsNames;
@@ -36,29 +36,37 @@ export interface Works {
   image: string;
   category: TabsNames;
   size?: WorkSizes;
+  width?: number;
+  height?: number;
 }
 
 export const works: Works[] = [
   {
-    name: 'Lalaland',
-    link: 'lalaland',
-    image: '01',
+    name: "Lalaland",
+    link: "lalaland",
+    image: "01",
     category: TabsNames.Web,
-    size: 'big',
+    size: "big",
+    width: 1911,
+    height: 1469,
   },
   {
-    name: 'CP GO',
-    link: 'cp-go',
-    image: '01',
+    name: "CP GO",
+    link: "cp-go",
+    image: "01",
     category: TabsNames.Web,
-    size: 'big',
+    size: "big",
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Dr. Q',
-    link: 'dr-q',
-    image: 'cover',
+    name: "Dr. Q",
+    link: "dr-q",
+    image: "cover",
     category: TabsNames.Web,
-    size: 'tall',
+    size: "tall",
+    width: 1600,
+    height: 1600,
   },
   /* {
     name: 'Cervantes',
@@ -81,49 +89,63 @@ export const works: Works[] = [
     size: 'big',
   }, */
   {
-    name: 'Luck',
-    link: 'luck',
-    image: 'luck',
+    name: "Luck",
+    link: "luck",
+    image: "luck",
     category: TabsNames.Lettering,
-    size: 'big',
+    size: "big",
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Chicky Nuggies',
-    link: 'chicky-nuggies',
-    image: 'chicky-nuggies',
+    name: "Chicky Nuggies",
+    link: "chicky-nuggies",
+    image: "chicky-nuggies",
     category: TabsNames.Lettering,
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Hello World',
-    link: 'hello-world',
-    image: 'hello-world',
+    name: "Hello World",
+    link: "hello-world",
+    image: "hello-world",
     category: TabsNames.Lettering,
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Every saint...',
-    link: 'saint',
-    image: 'saint',
+    name: "Every saint...",
+    link: "saint",
+    image: "saint",
     category: TabsNames.Lettering,
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Soul Shine',
-    link: 'soul-shine',
-    image: 'soul-shine',
+    name: "Soul Shine",
+    link: "soul-shine",
+    image: "soul-shine",
     category: TabsNames.Lettering,
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Stay Weird',
-    link: 'stay-weird',
-    image: 'stay-weird',
+    name: "Stay Weird",
+    link: "stay-weird",
+    image: "stay-weird",
     category: TabsNames.Lettering,
-    size: 'big',
+    size: "big",
+    width: 1800,
+    height: 1800,
   },
   {
-    name: 'Timing',
-    link: 'timing',
-    image: 'timing',
+    name: "Timing",
+    link: "timing",
+    image: "timing",
     category: TabsNames.Lettering,
-    size: 'big',
+    size: "big",
+    width: 1800,
+    height: 1800,
   },
   /* {
     name: 'Los Cuates',
@@ -151,100 +173,100 @@ export interface Images {
 
 export const lalalandImages: Images[] = [
   {
-    name: '01',
-    title: 'Lalaland',
+    name: "01",
+    title: "Lalaland",
   },
   {
-    name: '02',
-    title: 'Lalaland',
+    name: "02",
+    title: "Lalaland",
   },
   {
-    name: '04',
-    title: 'Lalaland',
-    size: 'big',
+    name: "04",
+    title: "Lalaland",
+    size: "big",
   },
   {
-    name: '05',
-    title: 'Lalaland',
+    name: "05",
+    title: "Lalaland",
   },
   {
-    name: '06',
-    title: 'Lalaland',
+    name: "06",
+    title: "Lalaland",
   },
   {
-    name: '07',
-    title: 'Lalaland',
-    size: 'big',
+    name: "07",
+    title: "Lalaland",
+    size: "big",
   },
 ];
 
 export const cpGoImages: Images[] = [
   {
-    name: '03',
-    title: 'CP Go',
+    name: "03",
+    title: "CP Go",
   },
   {
-    name: '02',
-    title: 'CP Go',
+    name: "02",
+    title: "CP Go",
   },
   {
-    name: '04',
-    title: 'CP Go',
+    name: "04",
+    title: "CP Go",
   },
   {
-    name: '05',
-    title: 'CP Go',
+    name: "05",
+    title: "CP Go",
   },
   {
-    name: '06',
-    title: 'CP Go',
-    size: 'big',
+    name: "06",
+    title: "CP Go",
+    size: "big",
   },
   {
-    name: '07',
-    title: 'CP Go',
+    name: "07",
+    title: "CP Go",
   },
   {
-    name: '08',
-    title: 'CP Go',
+    name: "08",
+    title: "CP Go",
   },
   {
-    name: '09',
-    title: 'CP Go',
-    size: 'big',
+    name: "09",
+    title: "CP Go",
+    size: "big",
   },
   {
-    name: '10',
-    title: 'CP Go',
+    name: "10",
+    title: "CP Go",
   },
   {
-    name: '11',
-    title: 'CP Go',
-    size: 'tall',
+    name: "11",
+    title: "CP Go",
+    size: "tall",
   },
   {
-    name: '12',
-    title: 'CP Go',
+    name: "12",
+    title: "CP Go",
   },
   {
-    name: '13',
-    title: 'CP Go',
+    name: "13",
+    title: "CP Go",
   },
   {
-    name: '14',
-    title: 'CP Go',
+    name: "14",
+    title: "CP Go",
   },
   {
-    name: '18',
-    title: 'CP Go',
-    size: 'tall',
+    name: "18",
+    title: "CP Go",
+    size: "tall",
   },
   {
-    name: '15',
-    title: 'CP Go',
+    name: "15",
+    title: "CP Go",
   },
   {
-    name: '17',
-    title: 'CP Go',
+    name: "17",
+    title: "CP Go",
   },
 ];

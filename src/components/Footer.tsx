@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 /* import Cat from './Cat'; */
 
 const Footer: React.FC = () => (
@@ -7,7 +7,7 @@ const Footer: React.FC = () => (
       {/* <Cat /> */}
       <p>
         <span>
-          © All rights reserved | 2022 Lalolita Design <span>-</span>{' '}
+          © All rights reserved | 2023 Lalolita Design <span>-</span>{" "}
         </span>
         <a title="Email us" href="mailto:info@lalolita.design">
           info@lalolita.design

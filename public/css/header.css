@@ -52,7 +52,7 @@ nav a p {
 }
 
 nav a:after {
-  content: '';
+  content: "";
   width: calc(100% + 10px);
   height: calc(100% + 5px);
   background-color: var(--black-100);
@@ -152,7 +152,11 @@ nav a.active p {
   header {
     --logo-width: 60px;
     --logo-height: 70px;
-    padding: 10px 0;
+    padding: 20px 0 10px;
+  }
+
+  header .box {
+    align-items: flex-start;
   }
 
   nav {
@@ -168,6 +172,6 @@ nav a.active p {
 
 @media (max-width: 374px) and (max-height: 767px) {
   nav {
-    gap: 5px;
+    gap: 10px;
   }
 }

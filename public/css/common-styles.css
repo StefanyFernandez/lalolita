@@ -50,14 +50,14 @@ svg {
 
 /* ANCHOR Media Query */
 
-@media (min-width: 2001px) {
+/* @media (min-width: 2001px) {
   @media (min-height: 1081px) {
     .box,
     .mainSection {
       max-width: 1600px;
     }
   }
-}
+} */
 
 @media (max-width: 767px) {
   .box,

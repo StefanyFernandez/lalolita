@@ -20,8 +20,8 @@ const about: React.FC = () => (
           <Image
             source="about-photo"
             title="Stefany Fernández"
-            width="952"
-            height="1420"
+            width={952}
+            height={1420}
           />
           <ShapePink />
           <DotsLarge />

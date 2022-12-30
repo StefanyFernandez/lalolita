@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from '../src/components/Image';
-import ShapeCyan from '../src/components/shapes/ShapeCyan';
-import Layout from '../src/components/Layout';
-import Behance from '../src/components/Behance';
-import LinkedIn from '../src/components/LinkedIn';
-import Dribbble from '../src/components/Dribbble';
-import Instagram from '../src/components/Instagram';
-import DotsSmall from '../src/components/shapes/DotsSmall';
+import React from "react";
+import Image from "../src/components/Image";
+import ShapeCyan from "../src/components/shapes/ShapeCyan";
+import Layout from "../src/components/Layout";
+import Behance from "../src/components/Behance";
+import LinkedIn from "../src/components/LinkedIn";
+import Dribbble from "../src/components/Dribbble";
+import Instagram from "../src/components/Instagram";
+import DotsSmall from "../src/components/shapes/DotsSmall";
 
 const contact: React.FC = () => (
   <Layout title="Contact" mainClass="contact" contactActive>
@@ -76,7 +76,7 @@ const contact: React.FC = () => (
       </div>
     </article>
     <article className="right">
-      <Image source="paco" title="paco" />
+      <Image source="paco" title="paco" width={712} height={822} />
       <ShapeCyan />
       <DotsSmall />
     </article>

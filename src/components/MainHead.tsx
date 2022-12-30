@@ -25,9 +25,12 @@ const MainHead: React.FC<MainHeadProps> = ({ title }) => (
     {/* Global site tag (gtag.js) - Google Analytics */}
     <Script
       async
+      strategy="afterInteractive"
       src="https://www.googletagmanager.com/gtag/js?id=G-JG9SND76YZ"
     />
     <Script
+      id="google-analytics"
+      strategy="afterInteractive"
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: `

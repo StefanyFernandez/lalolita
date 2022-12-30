@@ -39,6 +39,8 @@ const work: React.FC = () => {
                   image={i.image}
                   size={i.size}
                   project={i.link}
+                  width={i.width}
+                  height={i.height}
                 />
               ))}
         </>
@@ -55,6 +57,8 @@ const work: React.FC = () => {
             image={i.image}
             size={i.size}
             project={i.link}
+            width={i.width}
+            height={i.height}
           />
         ))}
       </>

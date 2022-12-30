@@ -11,6 +11,8 @@ interface WorkItemProps {
   size?: WorkSizes;
   project?: string;
   detail?: boolean;
+  width?: number;
+  height?: number;
 }
 
 const WorkItem: React.FC<WorkItemProps> = ({
@@ -21,6 +23,8 @@ const WorkItem: React.FC<WorkItemProps> = ({
   size,
   project,
   detail,
+  width,
+  height,
 }) => (
   <li
     className={`workItem${size ? ` ${size}` : ""}`}
@@ -37,7 +41,9 @@ const WorkItem: React.FC<WorkItemProps> = ({
       title={name}
       folder={`works/${project}/`}
       source={image}
-      format="jpeg"
+      width={width}
+      height={height}
+      /* format="jpeg" */
     />
   </li>
 );

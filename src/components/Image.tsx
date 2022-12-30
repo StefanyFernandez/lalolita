@@ -6,8 +6,8 @@ interface ImageProps {
   title: string;
   className?: string;
   format?: string;
-  width?: string;
-  height?: string;
+  width?: string | number;
+  height?: string | number;
   folder?: string;
   prefix?: string;
 }
@@ -45,19 +45,6 @@ const Image: React.FC<ImageProps> = ({
         }desktop/${source}@4x.webp 4x`}
         media="(min-width: 1025px)"
       />
-      <source
-        type={`image/${format || "png"}`}
-        srcSet={`${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }desktop/${source}@1x.${format || "png"} 1x, 
-               ${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }desktop/${source}@2x.${format || "png"} 2x, 
-               ${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }desktop/${source}@4x.${format || "png"} 4x`}
-        media="(min-width: 1025px)"
-      />
       {/* Tablet */}
       <source
         type="image/webp"
@@ -69,16 +56,6 @@ const Image: React.FC<ImageProps> = ({
         }tablet/${source}@2x.webp 2x`}
         media="(max-width: 1024px)"
       />
-      <source
-        type={`image/${format || "png"}`}
-        srcSet={`${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }tablet/${source}@1x.${format || "png"} 1x, 
-               ${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }tablet/${source}@2x.${format || "png"} 2x`}
-        media="(max-width: 1024px)"
-      />
       {/* Mobile */}
       <source
         type="image/webp"
@@ -88,16 +65,6 @@ const Image: React.FC<ImageProps> = ({
                ${assetPrefix}${prefix || ""}img/${
           folder || ""
         }mobile/${source}@2x.webp 2x`}
-        media="(max-width: 768px)"
-      />
-      <source
-        type={`image/${format || "png"}`}
-        srcSet={`${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }mobile/${source}@1x.${format || "png"} 1x, 
-               ${assetPrefix}${prefix || ""}img/${
-          folder || ""
-        }mobile/${source}@2x.${format || "png"} 2x`}
         media="(max-width: 768px)"
       />
       <img

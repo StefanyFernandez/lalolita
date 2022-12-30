@@ -333,6 +333,10 @@
     --right-width: 250px;
   }
 
+  .contact .mainSection {
+    padding-top: 100px;
+  }
+
   .contact h4 {
     width: 150px;
   }
