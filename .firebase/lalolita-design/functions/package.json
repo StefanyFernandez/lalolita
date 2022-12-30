@@ -1,0 +1,37 @@
+{
+  "name": "la-lolita-web",
+  "version": "0.0.1",
+  "description": "LaLolita's Web",
+  "homepage": "https://lalolita.design",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanyFernandez/lalolita.git"
+  },
+  "author": "Stefany <tefyfernandez8@gmail.com> (https://github.com/StefanyFernandez/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefanyFernandez/lalolita/issues"
+  },
+  "dependencies": {
+    "i18next": "^22.4.6",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.18.6",
+    "firebase-frameworks": "^0.6.0",
+    "firebase-functions": "^3.23.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "17"
+  }
+}
