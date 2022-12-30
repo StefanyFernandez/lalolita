@@ -1,14 +1,29 @@
 {
+  "name": "la-lolita-web",
+  "version": "0.0.1",
+  "description": "LaLolita's Web",
+  "homepage": "https://lalolita.design",
   "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanyFernandez/lalolita.git"
+  },
+  "author": "Stefany <tefyfernandez8@gmail.com> (https://github.com/StefanyFernandez/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefanyFernandez/lalolita/issues"
+  },
   "dependencies": {
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.43",

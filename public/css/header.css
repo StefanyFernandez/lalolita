@@ -1,0 +1,173 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 12px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+header .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoWrapper {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  transition: width 0.2s ease;
+  pointer-events: all;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  position: relative;
+  pointer-events: all;
+}
+
+nav a p {
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  font-size: var(--F14);
+  letter-spacing: 0.2rem;
+  z-index: 1;
+  user-select: none;
+  padding: 0 5px;
+}
+
+nav a:after {
+  content: '';
+  width: calc(100% + 10px);
+  height: calc(100% + 5px);
+  background-color: var(--black-100);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  nav a:hover {
+    opacity: 0.5;
+  }
+}
+
+nav a.active:after {
+  opacity: 1;
+}
+
+nav a:not(.active) {
+  background-color: var(--white-100);
+}
+
+nav a.active p {
+  color: var(--white-100);
+}
+
+/* ANCHOR Media Query */
+
+@media (min-width: 1025px) {
+  header {
+    --logo-width: 115px;
+    --logo-height: 140px;
+    padding-top: 30px;
+  }
+
+  @media (max-height: 850px) {
+    header {
+      --logo-width: 80px;
+      --logo-height: 100px;
+    }
+  }
+}
+
+@media (min-width: 2001px) {
+  @media (min-height: 1081px) {
+    header {
+      top: 80px;
+    }
+  }
+  @media (min-height: 2000px) {
+    header {
+      top: 160px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  @media (orientation: portrait) {
+    header {
+      border-top: 6px solid var(--black-100);
+    }
+  }
+
+  @media (min-width: 768px) {
+    header {
+      padding: 20px 0;
+    }
+  }
+
+  @media (min-height: 606px) {
+    header {
+      --logo-width: 75px;
+      --logo-height: 90px;
+    }
+  }
+
+  @media (max-height: 605px) and (orientation: landscape) {
+    header {
+      --logo-width: 60px;
+      --logo-height: 70px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    --logo-width: 60px;
+    --logo-height: 70px;
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  nav a p {
+    font-size: var(--F13);
+  }
+}
+
+@media (max-width: 374px) and (max-height: 767px) {
+  nav {
+    gap: 5px;
+  }
+}
