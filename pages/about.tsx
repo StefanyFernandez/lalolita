@@ -17,7 +17,12 @@ const about: React.FC = () => (
     <article className="personal">
       <div className="left">
         <div className="wrapper">
-          <Image source="about-photo" title="Stefany Fernández" />
+          <Image
+            source="about-photo"
+            title="Stefany Fernández"
+            width="952"
+            height="1420"
+          />
           <ShapePink />
           <DotsLarge />
           <Circle />
