@@ -81,11 +81,18 @@
   width: 100%;
 
   grid-template-columns: repeat(var(--columns), 1fr);
-  /* grid-auto-rows: var(--row-size); */
 
   grid-column-gap: var(--gutter);
   grid-row-gap: var(--gutter);
   grid-auto-flow: dense;
+}
+
+@media screen {
+  @media (min-width: 0) {
+    .work .tabsContent:not(.empty) {
+      grid-auto-rows: var(--row-size);
+    }
+  }
 }
 
 @media (min-width: 450px) {
