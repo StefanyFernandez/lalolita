@@ -87,8 +87,16 @@
   grid-auto-flow: dense;
 }
 
-@media screen {
+/* @media screen {
   @media (min-width: 0) {
+    .work .tabsContent:not(.empty) {
+      grid-auto-rows: var(--row-size);
+    }
+  }
+} */
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @media screen {
     .work .tabsContent:not(.empty) {
       grid-auto-rows: var(--row-size);
     }

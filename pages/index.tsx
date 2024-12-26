@@ -1,23 +1,23 @@
-import React from "react";
-import Arrow from "../src/components/Arrow";
-import Image from "../src/components/Image";
-import Layout from "../src/components/Layout";
-import Circle from "../src/components/shapes/Circle";
-import DotsLarge from "../src/components/shapes/DotsLarge";
-import ShapeYellow from "../src/components/shapes/ShapeYellow";
+import React from 'react'
+import Arrow from '../src/components/Arrow'
+import Image from '../src/components/Image'
+import Layout from '../src/components/Layout'
+import Circle from '../src/components/shapes/Circle'
+import DotsLarge from '../src/components/shapes/DotsLarge'
+import ShapeYellow from '../src/components/shapes/ShapeYellow'
 
 const index: React.FC = () => (
-  <Layout mainClass="home" title="Home">
-    <article className="left">
-      <Image source="lola" title="Lola" width={771} height={872} />
+  <Layout mainClass='home' title='Home'>
+    <article className='left'>
+      <Image source='lola' title='Lola' width={771} height={872} />
       <ShapeYellow />
       <DotsLarge />
       <Circle />
     </article>
-    <article className="right">
+    <article className='right'>
       <h2>
         Hello
-        <span className="dot">.</span>
+        <span className='dot'>.</span>
       </h2>
       <h3>
         We
@@ -27,12 +27,12 @@ const index: React.FC = () => (
         design!
       </h3>
       <h4>And we also love cats</h4>
-      <a title="Email us" href="mailto:info@lalolita.design" className="click">
+      <a title='Email us' href='mailto:info@lalolita.rocks' className='click'>
         Let’s talk
         <Arrow />
       </a>
     </article>
   </Layout>
-);
+)
 
-export default index;
+export default index

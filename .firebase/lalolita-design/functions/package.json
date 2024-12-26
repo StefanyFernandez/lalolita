@@ -2,7 +2,7 @@
   "name": "la-lolita-web",
   "version": "0.0.1",
   "description": "LaLolita's Web",
-  "homepage": "https://lalolita.design",
+  "homepage": "https://lalolita.rocks",
   "private": true,
   "scripts": {
     "dev": "next",
