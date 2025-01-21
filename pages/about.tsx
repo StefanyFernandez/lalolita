@@ -42,7 +42,7 @@ const about: React.FC = () => (
             My name is <b>Stefany Fernández</b>.
           </p>
           <p>
-            I’m a 30 year old designer and developer from Venezuela living in Madrid. Designing is
+            I’m a 32 year old designer and developer from Venezuela living in Madrid. Designing is
             my biggest passion, I like to create experiences that make people’s lives more enjoyable
             and easy.
           </p>
@@ -181,34 +181,12 @@ const about: React.FC = () => (
         on
       </h3>
       <ul>
-        <li>
-          Bran
-          <br />
-          ding
-        </li>
-        <li>
-          Packa
-          <br />
-          ging
-        </li>
-        <li>
-          Edito
-          <br />
-          rial
-        </li>
-        <li>
-          Lette
-          <br />
-          ring
-        </li>
-        <li>
-          UI
-          <br />+ UX
-        </li>
-        <li>
-          Front <br />
-          End
-        </li>
+        <li>UI / UX</li>
+        <li>Front End</li>
+        <li>Branding</li>
+        <li>Packaging</li>
+        <li>Editorial</li>
+        <li>Lettering</li>
       </ul>
     </article>
     <article className='skills'>
@@ -218,11 +196,8 @@ const about: React.FC = () => (
           at
         </h3>
         <ul>
-          <li>Adobe CC</li>
-          <li>Sketch</li>
           <li>Figma</li>
-          <li>Invision</li>
-          <li>Procreate</li>
+          <li>Adobe CC</li>
           <li>CSS</li>
           <li>HTML</li>
           <li>Typescript</li>
