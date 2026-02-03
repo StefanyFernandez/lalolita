@@ -100,12 +100,12 @@ const about: React.FC = () => (
           <ExperienceItem
             startDate='Nov 2022'
             endDate='Present'
-            position='Senior Brand Designer'
+            position='Senior Graphic Designer'
             company='IceCare Corp'
           />
           <ExperienceItem
             startDate='Mar 2022'
-            endDate='Dec 2022'
+            endDate='Nov 2022'
             position='Senior Ux / Ui Designer'
             company='The Lion'
           />
@@ -228,8 +228,8 @@ const about: React.FC = () => (
         title='Download resume'
         target='_blank'
         rel='noreferrer'
-        href='/stefany-fernandez-designer-cv.pdf'
-        download='stefany-fernandez-designer-cv'
+        href='/stefany-fernandez-cv.pdf'
+        download='stefany-fernandez-cv'
       >
         Download it!
       </a>
