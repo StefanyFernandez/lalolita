@@ -42,7 +42,7 @@ const about: React.FC = () => (
             My name is <b>Stefany Fernández</b>.
           </p>
           <p>
-            I’m a 32 year old designer and developer from Venezuela living in Madrid. Designing is
+            I’m a 33 year old designer and developer from Venezuela living in Madrid. Designing is
             my biggest passion, I like to create experiences that make people’s lives more enjoyable
             and easy.
           </p>
@@ -98,8 +98,14 @@ const about: React.FC = () => (
         </div>
         <div className='content'>
           <ExperienceItem
-            startDate='Nov 2022'
+            startDate='Feb 2025'
             endDate='Present'
+            position='Digital Designer & Consultant'
+            company='Freelance'
+          />
+          <ExperienceItem
+            startDate='Nov 2022'
+            endDate='Feb 2025'
             position='Senior Graphic Designer'
             company='IceCare Corp'
           />
